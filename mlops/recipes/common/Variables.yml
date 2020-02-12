@@ -1,15 +1,15 @@
 variables:
   #IMPORTANT: Update BASE_NAME with your GLOBALLY unique name. Rules: No underscore, max 10 chars & all lower case
-  BASE_NAME: 'demo-test' #used only during environment creation
+  BASE_NAME: 'gd1988' #used only during environment creation
   #If you want to use an existing workspace, change all the below values according to current setup
   WORKSPACE: '${{ variables.BASE_NAME }}-ws'
-  RESOURCE_GROUP: '${{ variables.BASE_NAME }}'
-  STORAGE_ACCOUNT: '${{ variables.BASE_NAME }}'
-  KEY_VAULT: '${{ variables.BASE_NAME }}'
-  APP_INSIGHTS: '${{ variables.BASE_NAME }}'
-  ACR: '${{ variables.BASE_NAME }}'
+  RESOURCE_GROUP: '${{ variables.BASE_NAME }}-rg'
+  STORAGE_ACCOUNT: '${{ variables.BASE_NAME }}sa'
+  KEY_VAULT: '${{ variables.BASE_NAME }}-kv'
+  APP_INSIGHTS: '${{ variables.BASE_NAME }}appins'
+  ACR: '${{ variables.BASE_NAME }}acr'
   AML_COMPUTE_CLUSTER: 'amlcluster'
-  AKS_CLUSTER: '${{ variables.BASE_NAME }}'
+  AKS_CLUSTER: '${{ variables.BASE_NAME }}aks'
 
   #Other configuration information
   AML_COMPUTE_SKU: 'STANDARD_DS4_V2'
